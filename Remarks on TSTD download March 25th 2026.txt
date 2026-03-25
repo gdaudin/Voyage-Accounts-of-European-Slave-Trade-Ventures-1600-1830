@@ -1,0 +1,7 @@
+36347 lines rather than 36108 lines
+45 variables instead of 274 
+Observation 78854 on 4 lines Source (Freeman’s Journal (London)) || X | Captain: Bates
+Observation 78855 on 4  lines Source (Freeman’s Journal (London)) || X | Captain: Scott
+
+Variable names have changed (basically, the csv uses the label); content of "enslavers" field has changed (they do not give one column per name anymore. Instead of captain1, captain2... Inverstor1 Inverstor2... there are vertical separators, eg : "Investor: Nobre, Francisco Inacio da Siqueira|Investor: Sobrinho|Investor: Moreira|Captain: Almeida, Manoel Joaquim de" )
+
