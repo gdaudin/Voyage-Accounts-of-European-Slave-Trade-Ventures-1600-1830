@@ -5,3 +5,36 @@ Observation 78855 on 4  lines Source (Freeman’s Journal (London)) || X | Cap
 
 Variable names have changed (basically, the csv uses the label); content of "enslavers" field has changed (they do not give one column per name anymore. Instead of captain1, captain2... Inverstor1 Inverstor2... there are vertical separators, eg : "Investor: Nobre, Francisco Inacio da Siqueira|Investor: Sobrinho|Investor: Moreira|Captain: Almeida, Manoel Joaquim de" )
 
+v28 has the same column name « Percent women » as v12 with 2,995 different values. 
+
+When reduced at 32 characters for state, V39, v40, v42 and v43 have the same column name  has the same column name « voyage_itinerary__imp_pricipal_ ».
+Should be : 
+V39 : voyage_itinerary__imp_principal_region_slave_dis__name
+V40 : voyage_itinerary__imp_principal_region_of_slave_purchase__name 
+V42 : voyage_itinerary__imp_principal_port_slave_dis__name
+V43 : voyage_itinerary__imp_principal_place_of_slave_purchase__name
+
+
+--- Variables we use from TSTD:
+Original import var name | OI label | 2026 var name
+YEARAF | Year departed Africa (imputed)|  *missing* (only month vessel departed Africa is given)
+MJBYPTIMP | Imputed principal port of slave purchase | voyage_itinerary__imp_principal_place_of_slave_purchase__name
+SLAXIMP | Imputed total slaves embarked | Total embarked (IMP)
+OWNERA...P | First, second..., sixteenth owner of venture | included in enslavers
+CAPTAINA...C | First, second, third captain’s name | included in enslavers
+VOYAGEID| Voyage identification number| Voyage ID
+SLAMIMP| Imputed total slaves disembarked | Total disembarked (IMP)
+DATEEND|Date when voyage completed|Month voyage completed (only)
+DATEDEP|Date that voyage began|Month voyage began (only)
+FATE|Particular outcome of voyage for slaves| Particular outcome (I guess)
+FATE4|Outcome of voyage for owner | *missing* only Outcome of voyage if ship captured is given
+YEARDEP|Imputed year in which voyage began | *missing* only month voyage began is given
+TONMOD|Tonnage standardized on British measured tons, 1773-1835  | Standardized Tonnage (IMP)
+NATINIMP|Imputed country in which ship registered (flag*)| Flag of vessel (IMP)
+
+
+
+
+
+
+
